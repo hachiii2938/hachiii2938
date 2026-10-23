@@ -3,6 +3,7 @@ import { HomePage } from './pages/Home';
 import { SchoolPage } from './pages/School';
 import { AboutPage } from './pages/About';
 import { WorksPage } from './pages/Works';
+import { GameUiPage } from './pages/GameUi';
 import { BackgroundScene } from './components/BackgroundScene';
 
 export default function App() {
@@ -27,6 +28,9 @@ export default function App() {
           <NavLink to="/works" className="nav-link">
             Works
           </NavLink>
+          <NavLink to="/game-ui" className="nav-link">
+            Game UI
+          </NavLink>
         </nav>
       </header>
 
@@ -36,6 +40,7 @@ export default function App() {
           <Route path="/school" element={<SchoolPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/works" element={<WorksPage />} />
+          <Route path="/game-ui" element={<GameUiPage />} />
         </Routes>
       </main>
 
